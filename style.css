@@ -1,0 +1,20 @@
+.todoList {
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+    margin-top:25px;
+    list-style: none;
+    color: white;
+}
+
+.container{
+ padding: 50px;
+ text-align: center;
+}
+
+.card-box {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: lightblue;
+}
