@@ -1,25 +1,25 @@
-var todoInp = document.getElementById("todoInp");
-var showList = document.getElementById("showList");
+let todoInp = document.getElementById("todoInp");
+let showList = document.getElementById("showList");
 
 function addTodo() {
-  var todoText = todoInp.value;
+  let todoText = todoInp.value;
 
-  var todoTextNode = document.createTextNode(todoText);
+  let todoTextNode = document.createTextNode(todoText);
 
-  var todoLi = document.createElement("li");
+  let todoLi = document.createElement("li");
   todoLi.setAttribute("class", "todoList");
   todoLi.appendChild(todoTextNode);
   showList.appendChild(todoLi);
 
-  var deleteBtn = document.createElement("button");
+  let deleteBtn = document.createElement("button");
   deleteBtn.setAttribute("onclick", "deletedTodo(this)");
-  var deleteTextNode = document.createTextNode("DELETE");
+  let deleteTextNode = document.createTextNode("DELETE");
   deleteBtn.appendChild(deleteTextNode);
   todoLi.appendChild(deleteBtn);
 
-  var editBtn = document.createElement("button");
+  let editBtn = document.createElement("button");
   editBtn.setAttribute("onclick", "editTodo(this)");
-  var editText = document.createTextNode("EDIT");
+  let editText = document.createTextNode("EDIT");
   editBtn.appendChild(editText);
   todoLi.appendChild(editBtn);
 
